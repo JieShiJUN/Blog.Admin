@@ -4,12 +4,12 @@ import { UserManager } from 'oidc-client'
 class ApplicationUserManager extends UserManager {
   constructor () {
     super({
-      authority: 'https://ids.neters.club',
+      authority: 'http://localhost:5004/',
       client_id: 'blogadminjs',
-      redirect_uri: 'https://vueadmin.neters.club/callback',
+      redirect_uri: 'http://127.0.0.1:2364/callback',
       response_type: 'id_token token',
       scope: 'openid profile roles blog.core.api',
-      post_logout_redirect_uri: 'https://vueadmin.neters.club'
+      post_logout_redirect_uri: 'http://127.0.0.1:2364'
     })
   }
 

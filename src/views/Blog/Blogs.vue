@@ -317,6 +317,7 @@ export default {
         Name: "",
         Enabled: "true",
       };
+        this.$router.replace(`/Blog/Editor`);
     },
     //编辑
     editSubmit: function () {

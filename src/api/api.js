@@ -270,8 +270,17 @@ export const addBug = params => {
 
 
 // 博客模块管理
+export const GetBlogNode = params => {
+    return axios.get(`${base}/api/Blog/GetBlogNode`, {params: params});
+};
+export const DelBlogImages = params => {
+    return axios.get(`${base}/api/Blog/DelBlogImages`, {params: params});
+};
 export const getBlogListPage = params => {
     return axios.get(`${base}/api/Blog`, {params: params});
+};
+export const addBlog = params => {
+    return axios.post(`${base}/api/Blog`,  params);
 };
 export const getBlogDeatil = params => {
     return axios.get(`${base}/api/Blog/DetailNuxtNoPer`, {params: params});
